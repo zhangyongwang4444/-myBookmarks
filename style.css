@@ -5,6 +5,19 @@
 a{
 	text-decoration: none;
 }
+body{
+	height: 100vh;
+	background: grey url(wall.jpg) no-repeat center center;
+	background-size: cover;
+}
+.row{
+	margin:20px;
+}
+.row  .key{
+	margin:0 10px;
+	font-family: Helvetica;
+	font-size: 18px;
+}
 kbd{
 	border: 1px solid red;
 	display: inline-block;
@@ -22,15 +35,46 @@ kbd > button{
 kbd:hover > button{
 	display: inline-block;
 }
+.key{
+	width: 50px;
+	height: 40px;
+	background: linear-gradient(to bottom, #292929 0%,#111111 100%); 
+	border: 1px solid #373737;
+	border-radius:6px;
+	box-shadow: 0 0 0 1px #1a1b1c,0 0 0 2px #1f2020,0 3px 0 2px #080808;
+	color: #c5c5c5;
+	/*display: inline-flex;
+	align-items: center;
+	justify-content: center;*/
+	position: relative;
+	}
+.key img{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 4px;
+	bottom: 2px;
+}
+.key .text{
+	position: absolute;
+	left: 4px;
+	top: 2px;
+}
 main{
 	text-align: center;
+	display: flex;               /*一个 flex 两个 center*/
+	justify-content: center;     /*水平居中*/
+	align-items: center;         /*垂直居中*/
+	height: 100vh;
 }
-#mainXXX{
+#main{
 	display: inline-block;
+	background: rgba(255,255,255,0.2);
+    border-radius: 10px;
 }
-#mainXXX > div:nth-child(2){
-	margin-left: 2em;
+#main > div:nth-child(2){
+	margin-left: -22px;
 }
-#mainXXX > div:nth-child(3){
-	margin-left: 4em;
+#main > div:nth-child(3){
+	margin-left: -80px;
 }
